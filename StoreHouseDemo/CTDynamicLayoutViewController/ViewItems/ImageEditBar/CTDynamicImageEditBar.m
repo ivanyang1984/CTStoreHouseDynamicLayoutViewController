@@ -87,23 +87,6 @@
     }];
 }
 
-#pragma mark - private methods
-- (void)showMiddleInView:(UIView *)view frame:(CGRect)frame
-{
-    
-}
-
-- (void)showAboveInView:(UIView *)view frame:(CGRect)frame
-{
-    
-}
-
-- (void)showBottomInView:(UIView *)view frame:(CGRect)frame
-{
-    
-}
-
-
 #pragma mark - event response
 - (void)didTappedEditButton:(UIButton *)editButton
 {

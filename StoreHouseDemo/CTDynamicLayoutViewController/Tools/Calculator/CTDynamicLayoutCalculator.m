@@ -9,20 +9,6 @@
 #import "CTDynamicLayoutCalculator.h"
 #import "NSMutableDictionary+CTDynamicSpaceMap.h"
 
-NSString * const kCTDynamicLayoutCalculatorInfoKeyView = @"kCTDynamicLayoutCalculatorInfoKeyView";
-NSString * const kCTDynamicLayoutCalculatorInfoKeyFrame = @"kCTDynamicLayoutCalculatorInfoKeyFrame";
-
-NSString * const kCTDynamicLayoutCalculatorViewInfoToCommitKeyFrame = @"kCTDynamicLayoutCalculatorViewInfoToCommitKeyFrame";
-NSString * const kCTDynamicLayoutCalculatorViewInfoToCommitKeyView = @"kCTDynamicLayoutCalculatorViewInfoToCommitKeyView";
-//NSString * const kCTDynamicLayoutCalculatorViewInfoToCommitKeyUpLeftPoint = @"kCTDynamicLayoutCalculatorViewInfoToCommitKeyUpLeftPoint";
-//NSString * const kCTDynamicLayoutCalculatorViewInfoToCommitKeyDownRightPoint = @"kCTDynamicLayoutCalculatorViewInfoToCommitKeyDownRightPoint";
-
-NSString * const kCTDynamicLayoutCalculatorViewInfoKeyUpLeftPoint = @"kCTDynamicLayoutCalculatorViewInfoKeyUpLeftPoint";
-NSString * const kCTDynamicLayoutCalculatorViewInfoKeyDownRightPoint = @"kCTDynamicLayoutCalculatorViewInfoKeyDownRightPoint";
-NSString * const kCTDynamicLayoutCalculatorViewInfoKeyWidth = @"kCTDynamicLayoutCalculatorViewInfoKeyWidth";
-NSString * const kCTDynamicLayoutCalculatorViewInfoKeyHeight = @"kCTDynamicLayoutCalculatorViewInfoKeyHeight";
-NSString * const kCTDynamicLayoutCalculatorViewInfoKeyView = @"kCTDynamicLayoutCalculatorViewInfoKeyView";
-
 @interface CTDynamicLayoutCalculator ()
 
 @property (nonatomic, assign, readwrite) CGFloat itemGap;
@@ -193,19 +179,3 @@ NSString * const kCTDynamicLayoutCalculatorViewInfoKeyView = @"kCTDynamicLayoutC
     return _gridLength;
 }
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

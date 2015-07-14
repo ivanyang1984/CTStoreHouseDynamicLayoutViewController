@@ -136,6 +136,8 @@
 {
     if ([viewItem isKindOfClass:[CTDynamicImageViewItem class]]) {
         [self.textFieldEditBar hide];
+        self.textFieldEditBar.targetTextFieldViewItem.textField.userInteractionEnabled = NO;
+        [self.textFieldEditBar.targetTextFieldViewItem.textField resignFirstResponder];
         self.imageEditBar.targetImageViewItem = (CTDynamicImageViewItem *)viewItem;
         [self.imageEditBar showInView:self.scrollView frame:viewItem.frame];
     }
@@ -205,9 +207,8 @@
     NSArray *viewsToAnimate = [self.calculator addView:textFieldViewItem nearPoint:currentPoint];
     [self animateWithTargetViewItem:nil viewsToAnimate:viewsToAnimate completion:^(BOOL finished) {
         if (finished) {
-            self.textFieldEditBar.targetTextFieldViewItem = textFieldViewItem;
-            textFieldViewItem.isSelected = YES;
             [self dynamicViewItemShowEditBar:textFieldViewItem];
+            textFieldViewItem.isSelected = YES;
         }
     }];
 }
