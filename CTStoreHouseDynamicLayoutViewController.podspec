@@ -16,14 +16,14 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CTStoreHouseDynamicLayoutViewController"
-  s.version      = "2.0"
+  s.version      = "2.1"
   s.summary      = "dynamic layout view controller"
 
   s.description  = <<-DESC
                     this is a dynamic layout view controller which inspired by StoreHouse
                    DESC
 
-  s.homepage     = "https://github.com/casatwy"
+  s.homepage     = "http://casatwy.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
